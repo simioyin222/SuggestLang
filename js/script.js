@@ -1,4 +1,3 @@
-document.getElementById("guessForm").addEventListener("submit", funcion(event)) {
+document.getElementById("guessForm").addEventListener("submit", function(event) {
   event.preventDefault();
-  console.log("Thank you!!");
-}
+})
