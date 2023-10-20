@@ -14,12 +14,18 @@ document.getElementById("guessForm").addEventListener("submit", function(event) 
   if (favProject && favMagic && favPersonality && favSuperpower && favDrink) {
     if (favProject === "web" && favMagic === "frontend") {
       language = "JavaScript";
-      else if (favProject === "web" && favMagic === "backend") {
-        language = "Rust";
-        
-      }
+    } else if (favProject === "web" && favMagic === "backend") {
+      language = "Rust";
+    } else if (favProject === "apps" && favMagic === "lonewolf") {
+      language = "Python";
+    } else if (favProject === "apps" && favMagic === "dogs") {
+      language = "C#";
+    } else if (favProject === "data" && favMagic === "timeTravel") {
+      language = "Swift";
+    } else if (favProject === "data" && favMagic === "shapeShift") {
+      language = "Ruby";
+    } else {
+      errorMessage = "NO MATCH";
     }
   }
-
-  console.log("Language: " + language);
-})
+});
