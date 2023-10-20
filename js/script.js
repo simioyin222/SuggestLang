@@ -8,5 +8,18 @@ document.getElementById("guessForm").addEventListener("submit", function(event) 
   const favSuperpower = document.getElementById("favSuperpower").value;
   const favDrink = document.getElementById("favDrink").value;
 
-  
+  let language = "";
+  let errorMessage = "";
+
+  if (favProject && favMagic && favPersonality && favSuperpower && favDrink) {
+    if (favProject === "web" && favMagic === "frontend") {
+      language = "JavaScript";
+      else if (favProject === "web" && favMagic === "backend") {
+        language = "Rust";
+        
+      }
+    }
+  }
+
+  console.log("Language: " + language);
 })
