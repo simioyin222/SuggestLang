@@ -28,4 +28,10 @@ document.getElementById("guessForm").addEventListener("submit", function(event) 
       errorMessage = "NO MATCH";
     }
   }
+	const resultElement = document.getElementById("result");
+  if (language) {
+    resultElement.textContent = "Your programming language is: " + language;
+  } else {
+    resultElement.textContent = errorMessage;
+  }
 });
